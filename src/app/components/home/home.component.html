@@ -1,549 +1,537 @@
 <style>
+    .elite-interiors-container .services .services-grid .service-card p {
+        color: #64748b;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+    }
 
-.elite-interiors-container .services .services-grid .service-card p {
-  color: #64748b;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-}
+    .elite-interiors-container .services .services-grid .service-card .service-features {
+        list-style: none;
+        text-align: left;
+    }
 
-.elite-interiors-container .services .services-grid .service-card .service-features {
-  list-style: none;
-  text-align: left;
-}
+    .elite-interiors-container .services .services-grid .service-card .service-features li {
+        color: #475569;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
 
-.elite-interiors-container .services .services-grid .service-card .service-features li {
-  color: #475569;
-  margin-bottom: 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
+    .elite-interiors-container .services .services-grid .service-card .service-features li::before {
+        content: '✓';
+        color: #fbbf24;
+        font-weight: bold;
+    }
 
-.elite-interiors-container .services .services-grid .service-card .service-features li::before {
-  content: '✓';
-  color: #fbbf24;
-  font-weight: bold;
-}
+    /* About Section */
+    .elite-interiors-container .about {
+        padding: 8rem 0;
+        background: #0f172a;
+        color: white;
+    }
 
-/* About Section */
-.elite-interiors-container .about {
-  padding: 8rem 0;
-  background: #0f172a;
-  color: white;
-}
+    .elite-interiors-container .about .about-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+    }
 
-.elite-interiors-container .about .about-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
+    .elite-interiors-container .about .about-container .about-text h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(2rem, 4vw, 3rem);
+        margin-bottom: 2rem;
+        color: #fbbf24;
+    }
 
-.elite-interiors-container .about .about-container .about-text h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  margin-bottom: 2rem;
-  color: #fbbf24;
-}
+    .elite-interiors-container .about .about-container .about-text p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #cbd5e1;
+        margin-bottom: 2rem;
+    }
 
-.elite-interiors-container .about .about-container .about-text p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #cbd5e1;
-  margin-bottom: 2rem;
-}
+    .elite-interiors-container .about .about-container .about-text .stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-top: 3rem;
+    }
 
-.elite-interiors-container .about .about-container .about-text .stats {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  margin-top: 3rem;
-}
+    .elite-interiors-container .about .about-container .about-text .stats .stat {
+        text-align: center;
+    }
 
-.elite-interiors-container .about .about-container .about-text .stats .stat {
-  text-align: center;
-}
+    .elite-interiors-container .about .about-container .about-text .stats .stat .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #fbbf24;
+        display: block;
+    }
 
-.elite-interiors-container .about .about-container .about-text .stats .stat .stat-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #fbbf24;
-  display: block;
-}
+    .elite-interiors-container .about .about-container .about-text .stats .stat .stat-label {
+        color: #94a3b8;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 
-.elite-interiors-container .about .about-container .about-text .stats .stat .stat-label {
-  color: #94a3b8;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
+    .elite-interiors-container .about .about-container .about-visual {
+        position: relative;
+    }
 
-.elite-interiors-container .about .about-container .about-visual {
-  position: relative;
-}
+    .elite-interiors-container .about .about-container .about-visual .about-image {
+        width: 100%;
+        height: 400px;
+        background: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+    }
 
-.elite-interiors-container .about .about-container .about-visual .about-image {
-  width: 100%;
-  height: 400px;
-  background: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px;
-  position: relative;
-  overflow: hidden;
-}
+    .elite-interiors-container .about .about-container .about-visual .about-image::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(251, 191, 36, 0.2), rgba(245, 158, 11, 0.2));
+    }
 
-.elite-interiors-container .about .about-container .about-visual .about-image::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(251, 191, 36, 0.2), rgba(245, 158, 11, 0.2));
-}
+    .elite-interiors-container .about .about-container .about-visual .about-image.floating {
+        animation: float 3s ease-in-out infinite;
+    }
 
-.elite-interiors-container .about .about-container .about-visual .about-image.floating {
-  animation: float 3s ease-in-out infinite;
-}
+    /* Contact Section */
+    .elite-interiors-container .contact {
+        padding: 8rem 0;
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    }
 
-/* Contact Section */
-.elite-interiors-container .contact {
-  padding: 8rem 0;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-}
+    .elite-interiors-container .contact .contact-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
 
-.elite-interiors-container .contact .contact-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
+    .elite-interiors-container .contact .contact-container .section-title {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
 
-.elite-interiors-container .contact .contact-container .section-title {
-  text-align: center;
-  margin-bottom: 4rem;
-}
+    .elite-interiors-container .contact .contact-container .section-title h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(2rem, 4vw, 3rem);
+        color: #0f172a;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
 
-.elite-interiors-container .contact .contact-container .section-title h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  color: #0f172a;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
+    .elite-interiors-container .contact .contact-container .section-title .section-subtitle {
+        font-size: 1.1rem;
+        color: #64748b;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.7;
+    }
 
-.elite-interiors-container .contact .contact-container .section-title .section-subtitle {
-  font-size: 1.1rem;
-  color: #64748b;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.7;
-}
+    .elite-interiors-container .contact .contact-container .contact-form {
+        background: white;
+        padding: 3rem;
+        border-radius: 20px;
+        box-shadow: 0 20px 50px rgba(15, 23, 42, 0.1);
+    }
 
-.elite-interiors-container .contact .contact-container .contact-form {
-  background: white;
-  padding: 3rem;
-  border-radius: 20px;
-  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.1);
-}
+    .elite-interiors-container .contact .contact-container .contact-form .form-group {
+        margin-bottom: 1.5rem;
+    }
 
-.elite-interiors-container .contact .contact-container .contact-form .form-group {
-  margin-bottom: 1.5rem;
-}
+    .elite-interiors-container .contact .contact-container .contact-form .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #374151;
+        font-weight: 500;
+    }
 
-.elite-interiors-container .contact .contact-container .contact-form .form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #374151;
-  font-weight: 500;
-}
+    .elite-interiors-container .contact .contact-container .contact-form .form-group input,
+    .elite-interiors-container .contact .contact-container .contact-form .form-group textarea,
+    .elite-interiors-container .contact .contact-container .contact-form .form-group .form-select {
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid #e5e7eb;
+        border-radius: 10px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        background: #f9fafb;
+        font-family: 'Inter', sans-serif;
+    }
 
-.elite-interiors-container .contact .contact-container .contact-form .form-group input,
-.elite-interiors-container .contact .contact-container .contact-form .form-group textarea,
-.elite-interiors-container .contact .contact-container .contact-form .form-group .form-select {
-  width: 100%;
-  padding: 1rem;
-  border: 2px solid #e5e7eb;
-  border-radius: 10px;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  background: #f9fafb;
-  font-family: 'Inter', sans-serif;
-}
+    .elite-interiors-container .contact .contact-container .contact-form .form-group input:focus,
+    .elite-interiors-container .contact .contact-container .contact-form .form-group textarea:focus,
+    .elite-interiors-container .contact .contact-container .contact-form .form-group .form-select:focus {
+        outline: none;
+        border-color: #fbbf24;
+        background: white;
+        box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.1);
+    }
 
-.elite-interiors-container .contact .contact-container .contact-form .form-group input:focus,
-.elite-interiors-container .contact .contact-container .contact-form .form-group textarea:focus,
-.elite-interiors-container .contact .contact-container .contact-form .form-group .form-select:focus {
-  outline: none;
-  border-color: #fbbf24;
-  background: white;
-  box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.1);
-}
+    .elite-interiors-container .contact .contact-container .contact-form .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
 
-.elite-interiors-container .contact .contact-container .contact-form .form-group textarea {
-  resize: vertical;
-  min-height: 120px;
-}
+    .elite-interiors-container .contact .contact-container .contact-form .submit-btn {
+        width: 100%;
+        background: linear-gradient(135deg, #fbbf24, #f59e0b);
+        color: #0f172a;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
 
-.elite-interiors-container .contact .contact-container .contact-form .submit-btn {
-  width: 100%;
-  background: linear-gradient(135deg, #fbbf24, #f59e0b);
-  color: #0f172a;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 10px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+    .elite-interiors-container .contact .contact-container .contact-form .submit-btn:hover:not(:disabled) {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 30px rgba(251, 191, 36, 0.3);
+    }
 
-.elite-interiors-container .contact .contact-container .contact-form .submit-btn:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(251, 191, 36, 0.3);
-}
+    .elite-interiors-container .contact .contact-container .contact-form .submit-btn:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
 
-.elite-interiors-container .contact .contact-container .contact-form .submit-btn:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
+    .elite-interiors-container .contact .contact-container .contact-form .submit-btn i {
+        margin-right: 0.5rem;
+    }
 
-.elite-interiors-container .contact .contact-container .contact-form .submit-btn i {
-  margin-right: 0.5rem;
-}
+    /* Keyframe Animations */
+    @keyframes heroFadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
 
-/* Keyframe Animations */
-@keyframes heroFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-20px);
+        }
+    }
 
 
 
-.elite-interiors-container .gallery-hero {
-    padding: 6rem 2rem 3rem;
-    text-align: center;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: #f8fafc;
-  }
-  
-  .elite-interiors-container .gallery-hero h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-  
-  .elite-interiors-container .gallery-hero .section-subtitle {
-    color: #cbd5e1;
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto;
-    font-weight: 300;
-  }
-  
-  .elite-interiors-container .gallery-section {
-    padding: 4rem 2rem;
-    background: #f8fafc;
-  }
-  
-  .elite-interiors-container .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .elite-interiors-container .gallery-item {
-    overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .elite-interiors-container .gallery-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.4s ease;
-    border-radius: 20px;
-  }
-  
-  .elite-interiors-container .gallery-item:hover img {
-    transform: scale(1.05);
-  } 
+    .elite-interiors-container .gallery-hero {
+        padding: 6rem 2rem 3rem;
+        text-align: center;
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        color: #f8fafc;
+    }
+
+    .elite-interiors-container .gallery-hero h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .elite-interiors-container .gallery-hero .section-subtitle {
+        color: #cbd5e1;
+        font-size: 1.1rem;
+        max-width: 600px;
+        margin: 0 auto;
+        font-weight: 300;
+    }
+
+    .elite-interiors-container .gallery-section {
+        padding: 4rem 2rem;
+        background: #f8fafc;
+    }
+
+    .elite-interiors-container .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .elite-interiors-container .gallery-item {
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .elite-interiors-container .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.4s ease;
+        border-radius: 20px;
+    }
+
+    .elite-interiors-container .gallery-item:hover img {
+        transform: scale(1.05);
+    }
 </style>
 <!-- elite-interiors.component.html -->
 <div class="elite-interiors-container">
-    
+
     <!-- Navbar -->
     <nav class="navbar ">
-      <div class="container-fluid">
-        <div class="row w-100 align-items-center justify-content-between">
-          
-          <!-- Logo -->
-          <div class="col-auto">
-            <a [routerLink]="['/']" class="logo">JALAL AHMED </a>
-          </div>
-  
-          <!-- Navigation Links and Toggle -->
-          <div class="col-auto d-flex align-items-center ms-auto elite-interiors-container">
-            <!-- Desktop Navigation Links -->
-            <ul class="nav-links d-none d-md-flex">
-              <li><a href="javascript:void(0)" [routerLink]="['/service']">Services</a></li>
-              <li><a href="javascript:void(0)" [routerLink]="['/about']">About</a></li>
-              <li><a href="javascript:void(0)" [routerLink]="['/contact']">Contact</a></li>
-              <li><a href="javascript:void(0)" [routerLink]="['/gallery']">Gallery</a></li>
+        <div class="container-fluid">
+            <div class="row w-100 align-items-center justify-content-between">
 
-            </ul>
-          
-            <!-- Mobile Toggle Button -->
-            <button type="button" class="mobile-toggle d-md-none ms-3" aria-label="Toggle navigation" (click)="toggleMobileMenu()">
-              <i class="fas fa-bars"></i>
-            </button>
-          </div>
-          
-          <!-- Mobile Navigation Menu -->
-          <ul class="nav-links-mobile d-md-none" *ngIf="mobileMenuOpen">
-            <li><a href="javascript:void(0)" [routerLink]="['/service']" (click)=" toggleMobileMenu()">Services</a></li>
-            <li><a href="javascript:void(0)" [routerLink]="['/about']" (click)=" toggleMobileMenu()">About</a></li>
-            <li><a href="javascript:void(0)" [routerLink]="['/contact']" (click)=" toggleMobileMenu()">Contact</a></li>
-            <li><a href="javascript:void(0)" [routerLink]="['/gallery']">Gallery</a></li>
+                <!-- Logo -->
+                <div class="col-auto">
+                    <a [routerLink]="['/']"><img height="50px" width="50px" src="https://i.ibb.co/nMTvGkSq/image.png"/></a>
+                </div>
 
-          </ul>
-          
-          
-  
+                <!-- Navigation Links and Toggle -->
+                <div class="col-auto d-flex align-items-center ms-auto elite-interiors-container">
+                    <!-- Desktop Navigation Links -->
+                    <ul class="nav-links d-none d-md-flex">
+                        <li><a href="javascript:void(0)" [routerLink]="['/service']">Services</a></li>
+                        <li><a href="javascript:void(0)" [routerLink]="['/about']">About</a></li>
+                        <li><a href="javascript:void(0)" [routerLink]="['/contact']">Contact</a></li>
+                        <li><a href="javascript:void(0)" [routerLink]="['/gallery']">Gallery</a></li>
+
+                    </ul>
+
+                    <!-- Mobile Toggle Button -->
+                    <button type="button" class="mobile-toggle d-md-none ms-3" aria-label="Toggle navigation"
+                        (click)="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Navigation Menu -->
+                <ul class="nav-links-mobile d-md-none" *ngIf="mobileMenuOpen">
+                    <li><a href="javascript:void(0)" [routerLink]="['/service']"
+                            (click)=" toggleMobileMenu()">Services</a></li>
+                    <li><a href="javascript:void(0)" [routerLink]="['/about']" (click)=" toggleMobileMenu()">About</a>
+                    </li>
+                    <li><a href="javascript:void(0)" [routerLink]="['/contact']"
+                            (click)=" toggleMobileMenu()">Contact</a></li>
+                    <li><a href="javascript:void(0)" [routerLink]="['/gallery']">Gallery</a></li>
+
+                </ul>
+
+
+
+            </div>
         </div>
-      </div>
     </nav>
-  
-  
-  
+
+
+
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-content">
-        <h1>JALAL AHMED TECHNIAL SERVICE</h1>
-        <p class="hero-subtitle">Where luxury meets precision in every detail</p>
-        <div class="hero-services">
-          <span class="service-tag">Luxury Interior Design</span>
-          <span class="service-tag">Civil Contracting</span>
-          <span class="service-tag">MEP Solutions</span>
-          <span class="service-tag">Architectural Planning</span>
+        <div class="hero-content" style="margin-top: 100px;">
+            <h1>JALAL AHMED TECHNICAL SERVICE</h1>
+            <p class="hero-subtitle">Where luxury meets precision in every detail</p>
+            <div class="hero-services">
+                <span class="service-tag">Luxury Interior Design</span>
+                <span class="service-tag">Civil Contracting</span>
+                <span class="service-tag">MEP Solutions</span>
+                <span class="service-tag">Architectural Planning</span>
+            </div>
+            <a [routerLink]="['/contact']" class="cta-button">Start Your Project</a>
         </div>
-        <a [routerLink]="['/contact']" class="cta-button">Start Your Project</a>
-      </div>
     </section>
-  
+
     <!-- Services Section -->
     <section id="services" class="services">
-      <div class="section-title fade-in">
-        <h2>Our Premium Services</h2>
-        <p class="section-subtitle">From concept to completion, we deliver excellence in every project with unmatched attention to detail and innovative solutions.</p>
-      </div>
-      
-      <div class="services-grid">
-        <div class="service-card fade-in" *ngFor="let service of services">
-          <div class="service-icon">
-            <i [class]="service.icon"></i>
-          </div>
-          <h3>{{ service.title }}</h3>
-          <p>{{ service.description }}</p>
-          <ul class="service-features">
-            <li *ngFor="let feature of service.features">{{ feature }}</li>
-          </ul>
+        <div class="section-title fade-in">
+            <h2>Our Premium Services</h2>
+            <p class="section-subtitle">From concept to completion, we deliver excellence in every project with
+                unmatched attention to detail and innovative solutions.</p>
         </div>
-      </div>
+
+        <div class="services-grid">
+            <div class="service-card fade-in" *ngFor="let service of services">
+                <div class="service-icon">
+                    <i [class]="service.icon"></i>
+                </div>
+                <h3>{{ service.title }}</h3>
+                <p>{{ service.description }}</p>
+                <ul class="service-features">
+                    <li *ngFor="let feature of service.features">{{ feature }}</li>
+                </ul>
+            </div>
+        </div>
     </section>
-  
+
     <!-- About Section -->
     <section id="about" class="about">
-      <div class="about-container">
-        <div class="about-text fade-in">
-          <h2>Why Choose Us?</h2>
-          <p>With over a decade of experience in luxury interior design and contracting, we've built a reputation for delivering exceptional results that exceed expectations.</p>
-          <p>Our team combines artistic vision with technical expertise to create spaces that are not only beautiful but also functional and sustainable. From concept to completion, we ensure every detail reflects your unique style and requirements.</p>
-          
-          <div class="stats">
-            <div class="stat" *ngFor="let stat of stats">
-              <span class="stat-number">{{ stat.number }}</span>
-              <span class="stat-label">{{ stat.label }}</span>
+        <div class="about-container">
+            <div class="about-text fade-in">
+                <h2>Why Choose Us?</h2>
+                <p>With over a decade of experience in luxury interior design and contracting, we've built a reputation
+                    for delivering exceptional results that exceed expectations.</p>
+                <p>Our team combines artistic vision with technical expertise to create spaces that are not only
+                    beautiful but also functional and sustainable. From concept to completion, we ensure every detail
+                    reflects your unique style and requirements.</p>
+
+                <div class="stats">
+                    <div class="stat" *ngFor="let stat of stats">
+                        <span class="stat-number">{{ stat.number }}</span>
+                        <span class="stat-label">{{ stat.label }}</span>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="about-visual fade-in">
+                <div class="about-image floating"></div>
+            </div>
         </div>
-        <div class="about-visual fade-in">
-          <div class="about-image floating"></div>
-        </div>
-      </div>
     </section>
 
     <div class="elite-interiors-container">
 
         <!-- Gallery Header -->
         <section class="gallery-hero">
-          <div class="gallery-title fade-in">
-            <h2>Our Stunning Creations</h2>
-            <p class="section-subtitle">Browse through our portfolio of elegant interiors and transformations.</p>
-          </div>
+            <div class="gallery-title fade-in">
+                <h2>Our Stunning Creations</h2>
+                <p class="section-subtitle">Browse through our portfolio of elegant interiors and transformations.</p>
+            </div>
         </section>
-      
+
         <!-- Gallery Grid -->
         <section class="gallery-section fade-in">
-          <div class="gallery-grid">
-            <div class="gallery-item" *ngFor="let image of galleryImages">
-              <img [src]="image.url" [alt]="image.alt">
+            <div class="gallery-grid">
+                <div class="gallery-item" *ngFor="let image of galleryImages">
+                    <img [src]="image.url" [alt]="image.alt">
+                </div>
             </div>
-          </div>
         </section>
-      
-      </div>
-  
+
+    </div>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
-      <div class="contact-container">
-        <div class="section-title fade-in">
-          <h2>Let's Create Something Amazing</h2>
-          <p class="section-subtitle">Ready to transform your space? Get in touch with us for a personalized consultation.</p>
-        </div>
-        
-        <form class="contact-form fade-in" (ngSubmit)="submitForm()">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input 
-              type="text" 
-              id="name" 
-              name="name" 
-              [(ngModel)]="contactForm.name"
-              required
-              placeholder="Enter Your Full Name">
-          </div>
-          
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input 
-              type="email" 
-              id="email" 
-              name="email" 
-              [(ngModel)]="contactForm.email"
-              required
-              placeholder="Enter Your Email">
-          </div>
-          
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input 
-              type="text" 
-              id="phone" 
-              name="phone" 
-              [(ngModel)]="contactForm.phone"
-              placeholder="Enter Your Phone Number">
-          </div>
-          
-          <div class="form-group">
-            <label for="service">Service Interested In</label>
-            <select 
-              id="service" 
-              name="service" 
-              [(ngModel)]="contactForm.service"
-              class="form-select">
-              <option *ngFor="let option of serviceOptions" [value]="option">
-                {{ option }}
-              </option>
-            </select>
-          </div>
-          
-          <div class="form-group mb-3">
-            <label for="message" class="form-label">Project Details</label>
-            <textarea 
-              id="message" 
-              name="message" 
-              [(ngModel)]="contactForm.message"
-              class="form-control"
-              rows="5"
-              placeholder="Tell us about your vision, timeline, and requirements..." 
-              required>
+        <div class="contact-container">
+            <div class="section-title fade-in">
+                <h2>Let's Create Something Amazing</h2>
+                <p class="section-subtitle">Ready to transform your space? Get in touch with us for a personalized
+                    consultation.</p>
+            </div>
+
+            <form class="contact-form fade-in" (ngSubmit)="submitForm()">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" [(ngModel)]="contactForm.name" required
+                        placeholder="Enter Your Full Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" [(ngModel)]="contactForm.email" required
+                        placeholder="Enter Your Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" [(ngModel)]="contactForm.phone"
+                        placeholder="Enter Your Phone Number">
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service Interested In</label>
+                    <select id="service" name="service" [(ngModel)]="contactForm.service" class="form-select">
+                        <option *ngFor="let option of serviceOptions" [value]="option">
+                            {{ option }}
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="message" class="form-label">Project Details</label>
+                    <textarea id="message" name="message" [(ngModel)]="contactForm.message" class="form-control"
+                        rows="5" placeholder="Tell us about your vision, timeline, and requirements..." required>
             </textarea>
-          </div>
-          
-          
-          <button type="submit" class="submit-btn" >
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-        </form>
-      </div>
+                </div>
+
+
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
     </section>
-  
+
     <!-- Footer -->
     <footer class="bg-dark text-light py-5">
         <div class="container">
-          <div class="row text-center text-md-start">
-            
-            <!-- Company Info -->
-            <div class="col-md-4 mb-4 mb-md-0">
-              <h5 class="mb-3">JALAL AHMED TECHNICAL SERVICE</h5>
-              <p class="mb-1"><i class="fas fa-map-marker-alt me-2"></i> Dubai, UAE</p>
-              <p class="mb-1"><i class="fas fa-phone me-2"></i> +971 50 123 4567</p>
-              <p class="mb-1"><i class="fas fa-envelope me-2"></i> info&#64;jalalahmedts.com</p>
-            </div>
-            
-            <!-- Navigation Links -->
-            <div class="col-md-4 mb-4 mb-md-0">
-              <h5 class="mb-3">Quick Links</h5>
-              <nav class="nav flex-column">
-                <a class="nav-link px-0 text-light" [routerLink]="['/service']">Services</a>
-                <a class="nav-link px-0 text-light" [routerLink]="['/about']">About</a>
-                <a class="nav-link px-0 text-light" [routerLink]="['/contact']">Contact</a>
-                <a href="javascript:void(0)" [routerLink]="['/gallery']">Gallery</a>
+            <div class="row text-center text-md-start">
 
-                <a class="nav-link px-0 text-light" href="#">Privacy Policy</a>
-              </nav>
-            </div>
-            
-            <!-- Newsletter / Social -->
-            <div class="col-md-4">
-              <h5 class="mb-3">Stay Connected</h5>
-              <form>
-                <div class="mb-2">
-                  <input type="email" class="form-control form-control-sm" placeholder="Your email" />
+                <!-- Company Info -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">JALAL AHMED TECHNICAL SERVICE</h5>
+                    <p class="mb-1"><i class="fas fa-map-marker-alt me-2"></i> Dubai, UAE</p>
+                    <p class="mb-1"><i class="fas fa-phone me-2"></i> +971 50 123 4567</p>
+                    <p class="mb-1"><i class="fas fa-envelope me-2"></i> info&#64;jalalahmedts.com</p>
                 </div>
-                <button type="submit" class="btn btn-warning btn-sm">Subscribe</button>
-              </form>
-              <div class="mt-3">
-                <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a>
-              </div>
+
+                <!-- Navigation Links -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <nav class="nav flex-column">
+                        <a class="nav-link px-0 text-light" [routerLink]="['/service']">Services</a>
+                        <a class="nav-link px-0 text-light" [routerLink]="['/about']">About</a>
+                        <a class="nav-link px-0 text-light" [routerLink]="['/contact']">Contact</a>
+                        <a href="javascript:void(0)" [routerLink]="['/gallery']">Gallery</a>
+
+                        <a class="nav-link px-0 text-light" href="#">Privacy Policy</a>
+                    </nav>
+                </div>
+
+                <!-- Newsletter / Social -->
+                <div class="col-md-4">
+                    <h5 class="mb-3">Stay Connected</h5>
+                    <form>
+                        <div class="mb-2">
+                            <input type="email" class="form-control form-control-sm" placeholder="Your email" />
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-sm">Subscribe</button>
+                    </form>
+                    <div class="mt-3">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
             </div>
-      
-          </div>
-      
-          <hr class="border-light mt-4" />
-      
-          <div class="text-center small">
-            &copy; 2025 Jalal Ahmed Technical Services. All rights reserved.
-          </div>
+
+            <hr class="border-light mt-4" />
+
+            <div class="text-center small">
+                &copy; 2025 Jalal Ahmed Technical Services. All rights reserved.
+            </div>
         </div>
-      </footer>
-      
-      
-  </div>
+    </footer>
+
+
+</div>
