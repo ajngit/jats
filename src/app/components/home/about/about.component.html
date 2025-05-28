@@ -1,0 +1,122 @@
+<!-- elite-interiors.component.html -->
+<div class="elite-interiors-container">
+    
+    <!-- Navbar -->
+    <nav class="navbar ">
+      <div class="container-fluid">
+        <div class="row w-100 align-items-center justify-content-between">
+          
+          <!-- Logo -->
+          <div class="col-auto">
+            <a [routerLink]="['/']" class="logo">JALAL AHMED </a>
+          </div>
+  
+          <!-- Navigation Links and Toggle -->
+          <div class="col-auto d-flex align-items-center ms-auto elite-interiors-container">
+            <!-- Desktop Navigation Links -->
+            <ul class="nav-links d-none d-md-flex">
+                <li><a href="javascript:void(0)" [routerLink]="['/service']">Services</a></li>
+                <li><a href="javascript:void(0)" [routerLink]="['/about']">About</a></li>
+                <li><a href="javascript:void(0)" [routerLink]="['/contact']">Contact</a></li>
+                <li><a href="javascript:void(0)" [routerLink]="['/gallery']">Gallery</a></li>
+
+            </ul>
+          
+            <!-- Mobile Toggle Button -->
+            <button type="button" class="mobile-toggle d-md-none ms-3" aria-label="Toggle navigation" (click)="toggleMobileMenu()">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          
+          <!-- Mobile Navigation Menu -->
+          <ul class="nav-links-mobile d-md-none" *ngIf="mobileMenuOpen">
+            <li><a href="javascript:void(0)" [routerLink]="['/service']">Services</a></li>
+            <li><a href="javascript:void(0)" [routerLink]="['/about']">About</a></li>
+            <li><a href="javascript:void(0)" [routerLink]="['/contact']">Contact</a></li>
+            <li><a href="javascript:void(0)" [routerLink]="['/gallery']">Gallery</a></li>
+
+          </ul>
+          
+          
+  
+        </div>
+      </div>
+    </nav>
+  
+  
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="about-container">
+        <div class="about-text fade-in">
+          <h2>Why Choose Us?</h2>
+          <p>With over a decade of experience in luxury interior design and contracting, we've built a reputation for delivering exceptional results that exceed expectations.</p>
+          <p>Our team combines artistic vision with technical expertise to create spaces that are not only beautiful but also functional and sustainable. From concept to completion, we ensure every detail reflects your unique style and requirements.</p>
+          
+          <div class="stats">
+            <div class="stat" *ngFor="let stat of stats">
+              <span class="stat-number">{{ stat.number }}</span>
+              <span class="stat-label">{{ stat.label }}</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual fade-in">
+          <div class="about-image floating"></div>
+        </div>
+      </div>
+    </section>
+  
+    
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+          <div class="row text-center text-md-start">
+            
+            <!-- Company Info -->
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h5 class="mb-3">JALAL AHMED TECHNICAL SERVICE</h5>
+              <p class="mb-1"><i class="fas fa-map-marker-alt me-2"></i> Dubai, UAE</p>
+              <p class="mb-1"><i class="fas fa-phone me-2"></i> +971 50 123 4567</p>
+              <p class="mb-1"><i class="fas fa-envelope me-2"></i> info&#64;jalalahmedts.com</p>
+            </div>
+            
+            <!-- Navigation Links -->
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h5 class="mb-3">Quick Links</h5>
+              <nav class="nav flex-column">
+                <a class="nav-link px-0 text-light" [routerLink]="['/service']">Services</a>
+                <a class="nav-link px-0 text-light" [routerLink]="['/about']">About</a>
+                <a class="nav-link px-0 text-light" [routerLink]="['/contact']">Contact</a>
+                <a href="javascript:void(0)" [routerLink]="['/gallery']">Gallery</a>
+                <a class="nav-link px-0 text-light" href="#">Privacy Policy</a>
+              </nav>
+            </div>
+            
+            <!-- Newsletter / Social -->
+            <div class="col-md-4">
+              <h5 class="mb-3">Stay Connected</h5>
+              <form>
+                <div class="mb-2">
+                  <input type="email" class="form-control form-control-sm" placeholder="Your email" />
+                </div>
+                <button type="submit" class="btn btn-warning btn-sm">Subscribe</button>
+              </form>
+              <div class="mt-3">
+                <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+      
+          </div>
+      
+          <hr class="border-light mt-4" />
+      
+          <div class="text-center small">
+            &copy; 2025 Jalal Ahmed Technical Services. All rights reserved.
+          </div>
+        </div>
+      </footer>
+      
+  </div>
