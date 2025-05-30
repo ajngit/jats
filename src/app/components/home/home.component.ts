@@ -113,15 +113,15 @@ this.metaService.addTags([
   // Open Graph meta for social sharing
   { property: 'og:title', content: 'Jalal Ahmed Technical Service' },
   { property: 'og:description', content: 'Professional interior, construction and maintenance services in UAE.' },
-  { property: 'og:image', content: 'https://jats-git-main-ajngits-projects.vercel.app/assets/1.webp' },
-  { property: 'og:url', content: 'https://jats-git-main-ajngits-projects.vercel.app/' },
+  { property: 'og:image', content: 'https://jats-seven.vercel.app/assets/1.webp' },
+  { property: 'og:url', content: 'https://jats-seven.vercel.app/' },
   { property: 'og:type', content: 'website' },
 
   // Twitter card
   { name: 'twitter:card', content: 'summary_large_image' },
   { name: 'twitter:title', content: 'Jalal Ahmed Technical Service' },
   { name: 'twitter:description', content: 'Leading technical services in interior, civil, and MEP works.' },
-  { name: 'twitter:image', content: 'https://jats-git-main-ajngits-projects.vercel.app/assets/1.webp' }
+  { name: 'twitter:image', content: 'https://jats-seven.vercel.app/assets/1.webp' }
 ]);
 
     }
