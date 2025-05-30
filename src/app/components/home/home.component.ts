@@ -73,15 +73,21 @@ import { RouterModule } from '@angular/router';
     toggleMobileMenu() {
       this.mobileMenuOpen = !this.mobileMenuOpen;
     }
+
+     isMenuOpen = false;
+
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
   
-    galleryImages = [
-      { url: 'assets/gallery/img1.jpg', alt: 'Living Room Design' },
-      { url: 'assets/gallery/img2.jpg', alt: 'Modern Kitchen' },
-      { url: 'assets/gallery/img3.jpg', alt: 'Elegant Bedroom' },
-      { url: 'assets/gallery/img4.jpg', alt: 'Office Interior' },
-      { url: 'assets/gallery/img5.jpg', alt: 'Luxury Bathroom' },
-      { url: 'assets/gallery/img6.jpg', alt: 'Dining Area' }
-    ];
+     galleryImages = [
+    { url: 'assets/1.webp', alt: 'Living Room Design' },
+    { url: 'assets/2.webp', alt: 'Modern Kitchen' },
+    { url: 'assets/3.webp', alt: 'Elegant Bedroom' },
+    { url: 'assets/4.webp', alt: 'Office Interior' },
+    { url: 'assets/5.webp', alt: 'Luxury Bathroom' },
+    { url: 'assets/6.webp', alt: 'Dining Area' }
+  ];
 
 
   

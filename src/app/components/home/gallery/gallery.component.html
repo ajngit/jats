@@ -287,7 +287,7 @@
   
   .elite-interiors-container .gallery-item img {
     width: 100%;
-    height: auto;
+    height: 250px;
     display: block;
     transition: transform 0.4s ease;
     border-radius: 20px;
@@ -314,11 +314,12 @@
             <div class="col-auto d-flex align-items-center ms-auto elite-interiors-container">
               <!-- Desktop Navigation Links -->
               <ul class="nav-links d-none d-md-flex">
-                  <li><a href="javascript:void(0)" [routerLink]="['/service']">Services</a></li>
-                  <li><a href="javascript:void(0)" [routerLink]="['/about']">About</a></li>
-                  <li><a href="javascript:void(0)" [routerLink]="['/contact']">Contact</a></li>
-                  <li><a href="javascript:void(0)" [routerLink]="['/gallery']">Gallery</a></li>
-  
+               <li><a href="javascript:void(0)" [routerLink]="['/']">Home</a></li>
+                        <li><a href="javascript:void(0)" [routerLink]="['/about']">About</a></li>
+                        <li><a href="javascript:void(0)" [routerLink]="['/service']">Services</a></li>
+                        <li><a href="javascript:void(0)" [routerLink]="['/gallery']">Gallery</a></li>
+                        <li><a href="javascript:void(0)" [routerLink]="['/contact']">Contact</a></li>
+
               </ul>
             
               <!-- Mobile Toggle Button -->
@@ -329,10 +330,12 @@
             
             <!-- Mobile Navigation Menu -->
             <ul class="nav-links-mobile d-md-none" *ngIf="mobileMenuOpen">
-              <li><a href="javascript:void(0)" [routerLink]="['/service']">Services</a></li>
-                <li><a href="javascript:void(0)" [routerLink]="['/about']">About</a></li>
-                <li><a href="javascript:void(0)" [routerLink]="['/contact']">Contact</a></li>
-                <li><a href="javascript:void(0)" [routerLink]="['/gallery']">Gallery</a></li>
+              <li><a href="javascript:void(0)" [routerLink]="['/']">Home</a></li>
+                        <li><a href="javascript:void(0)" [routerLink]="['/about']">About</a></li>
+                        <li><a href="javascript:void(0)" [routerLink]="['/service']">Services</a></li>
+                        <li><a href="javascript:void(0)" [routerLink]="['/gallery']">Gallery</a></li>
+                        <li><a href="javascript:void(0)" [routerLink]="['/contact']">Contact</a></li>
+
   
             </ul>
             
@@ -373,12 +376,13 @@
           <div class="row text-center text-md-start">
             
             <!-- Company Info -->
-            <div class="col-md-4 mb-4 mb-md-0">
-              <h5 class="mb-3">JALAL AHMED TECHNICAL SERVICE</h5>
-              <p class="mb-1"><i class="fas fa-map-marker-alt me-2"></i> Dubai, UAE</p>
-              <p class="mb-1"><i class="fas fa-phone me-2"></i> +971 50 123 4567</p>
-              <p class="mb-1"><i class="fas fa-envelope me-2"></i> info&#64;jalalahmedts.com</p>
-            </div>
+             <!-- Company Info -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">JALAL AHMED TECHNICAL SERVICE</h5>
+                    <p class="mb-1"><i class="fas fa-map-marker-alt me-2"></i> Dubai, UAE</p>
+                    <p class="mb-1"><i class="fas fa-phone me-2"></i> +971 56 869 8489</p>
+                    <p class="mb-1"><i class="fas fa-envelope me-2"></i> jalalahmed.tech&#64;gmail.com</p>
+                </div>
             
             <!-- Navigation Links -->
             <div class="col-md-4 mb-4 mb-md-0">
