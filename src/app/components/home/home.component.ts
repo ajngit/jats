@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { Title, Meta } from '@angular/platform-browser';
+
 @Component({
   selector: 'app-home',
   imports:[FormsModule,CommonModule, RouterModule],
@@ -91,11 +93,37 @@ import { RouterModule } from '@angular/router';
 
 
   
-    constructor(private el: ElementRef, private renderer: Renderer2) {}
+    constructor(private el: ElementRef, private renderer: Renderer2,
+  private titleService: Title,
+  private metaService: Meta
+    ) {}
   
     ngOnInit(): void {
       // Load external stylesheets
       this.loadExternalStyles();
+
+      this.titleService.setTitle('Home | Jalal Ahmed Technical Service');
+
+this.metaService.addTags([
+  { name: 'description', content: 'Interior fitout, civil contracting, MEP works, maintenance, and architectural planning by Jalal Ahmed Technical Service.' },
+  { name: 'keywords', content: 'Interior Fitout, Civil Contracting, MEP, Maintenance, Architecture, Dubai, Technical Service' },
+  { name: 'robots', content: 'index, follow' },
+  { name: 'author', content: 'Jalal Ahmed Technical Service' },
+
+  // Open Graph meta for social sharing
+  { property: 'og:title', content: 'Jalal Ahmed Technical Service' },
+  { property: 'og:description', content: 'Professional interior, construction and maintenance services in UAE.' },
+  { property: 'og:image', content: 'https://jats-git-main-ajngits-projects.vercel.app/assets/1.webp' },
+  { property: 'og:url', content: 'https://jats-git-main-ajngits-projects.vercel.app/' },
+  { property: 'og:type', content: 'website' },
+
+  // Twitter card
+  { name: 'twitter:card', content: 'summary_large_image' },
+  { name: 'twitter:title', content: 'Jalal Ahmed Technical Service' },
+  { name: 'twitter:description', content: 'Leading technical services in interior, civil, and MEP works.' },
+  { name: 'twitter:image', content: 'https://jats-git-main-ajngits-projects.vercel.app/assets/1.webp' }
+]);
+
     }
   
     ngAfterViewInit(): void {
