@@ -228,7 +228,7 @@ this.metaService.addTags([
       const query = this.contactForm.message;
       const service = this.contactForm.service;
       const message = `Name: ${name}%0AEmail: ${email}%0AMobile: ${mobile}%0AService: ${service}%0AMessage: ${query}`;
-      const phone = '916238536683'; // your WhatsApp number with country code
+      const phone = '971568698489'; // your WhatsApp number with country code
     
       window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
     }
