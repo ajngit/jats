@@ -16,10 +16,10 @@ export const routes: Routes = [
       description: 'Interior fitout, civil contracting, architectural services in UAE.',
       keywords: 'interior design, civil contracting, MEP, maintenance, architecture',
       robots: 'index, follow',
-      canonical: 'https://jats-seven.vercel.app/',
+      canonical: 'https://www.jalalahmedtechnicalservices.com/',
       ogTitle: 'Jalal Ahmed Technical Service - Home',
       ogDescription: 'Professional interior and construction services in UAE.',
-      ogImage: 'https://jats-seven.vercel.app/assets/og-home.jpg'
+      ogImage: 'https://www.jalalahmedtechnicalservices.com/assets/logo.png'
     }
   },
   {
@@ -29,10 +29,10 @@ export const routes: Routes = [
       description: 'Interior fitout, civil contracting, architectural services in UAE.',
       keywords: 'interior design, civil contracting, MEP, maintenance, architecture',
       robots: 'index, follow',
-      canonical: 'https://jats-seven.vercel.app/',
+      canonical: 'https://www.jalalahmedtechnicalservices.com/',
       ogTitle: 'Jalal Ahmed Technical Service - Home',
       ogDescription: 'Professional interior and construction services in UAE.',
-      ogImage: 'https://jats-seven.vercel.app/assets/og-home.jpg'
+      ogImage: 'https://www.jalalahmedtechnicalservices.com/assets/logo.png'
     }
   },
   {
@@ -42,10 +42,10 @@ export const routes: Routes = [
       description: 'Interior fitout, civil contracting, architectural services in UAE.',
       keywords: 'interior design, civil contracting, MEP, maintenance, architecture',
       robots: 'index, follow',
-      canonical: 'https://jats-seven.vercel.app/',
+      canonical: 'https://www.jalalahmedtechnicalservices.com/',
       ogTitle: 'Jalal Ahmed Technical Service - Home',
       ogDescription: 'Professional interior and construction services in UAE.',
-      ogImage: 'https://jats-seven.vercel.app/assets/og-home.jpg'
+      ogImage: 'https://www.jalalahmedtechnicalservices.com/assets/logo.png'
     }
   },
   {
@@ -55,10 +55,10 @@ export const routes: Routes = [
       description: 'Interior fitout, civil contracting, architectural services in UAE.',
       keywords: 'interior design, civil contracting, MEP, maintenance, architecture',
       robots: 'index, follow',
-      canonical: 'https://jats-seven.vercel.app/',
+      canonical: 'https://www.jalalahmedtechnicalservices.com/',
       ogTitle: 'Jalal Ahmed Technical Service - Home',
       ogDescription: 'Professional interior and construction services in UAE.',
-      ogImage: 'https://jats-seven.vercel.app/assets/og-home.jpg'
+      ogImage: 'https://www.jalalahmedtechnicalservices.com/assets/logo.png'
     }
   },
   {
@@ -68,10 +68,10 @@ export const routes: Routes = [
       description: 'Interior fitout, civil contracting, architectural services in UAE.',
       keywords: 'interior design, civil contracting, MEP, maintenance, architecture',
       robots: 'index, follow',
-      canonical: 'https://jats-seven.vercel.app/',
+      canonical: 'https://www.jalalahmedtechnicalservices.com/',
       ogTitle: 'Jalal Ahmed Technical Service - Home',
       ogDescription: 'Professional interior and construction services in UAE.',
-      ogImage: 'https://jats-seven.vercel.app/assets/og-home.jpg'
+      ogImage: 'https://www.jalalahmedtechnicalservices.com/assets/logo.png'
     }
   },
 
