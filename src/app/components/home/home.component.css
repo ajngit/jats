@@ -299,5 +299,128 @@
   font-weight: 600;
 }
 
+/* Welcome Section */
+.elite-interiors-container .welcome {
+  background-color: rgba(15, 23, 42, 0.95);
+  position: relative;
+}
+
+.elite-interiors-container .welcome::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="0.5" fill="%23f1f5f9" opacity="0.3"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+}
+
+.elite-interiors-container .welcome .welcome-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.elite-interiors-container .welcome .welcome-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.elite-interiors-container .welcome .welcome-content .company-highlight {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.elite-interiors-container .welcome .welcome-content .welcome-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  color: #77869a;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 500;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.elite-interiors-container .welcome .welcome-description {
+  margin-bottom: 3rem;
+}
+
+.elite-interiors-container .welcome .welcome-description p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #6c7a91;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.elite-interiors-container .welcome .welcome-description p strong {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.elite-interiors-container .welcome .welcome-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.elite-interiors-container .welcome .welcome-features .feature-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.elite-interiors-container .welcome .welcome-features .feature-item:hover {
+  transform: translateX(5px);
+}
+
+.elite-interiors-container .welcome .welcome-features .feature-item i {
+  color: #fbbf24;
+  font-size: 1.2rem;
+  min-width: 20px;
+}
+
+.elite-interiors-container .welcome .welcome-features .feature-item span {
+  color: #374151;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.elite-interiors-container .welcome .welcome-closing {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.1), rgba(245, 158, 11, 0.05));
+  border-radius: 15px;
+  border-left: 4px solid #fbbf24;
+}
+
+.elite-interiors-container .welcome .welcome-closing p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.6;
+  font-style: italic;
+}
+
 
   

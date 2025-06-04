@@ -283,24 +283,25 @@
     </nav>
   
     <!-- Services Section -->
-    <section id="services" class="services">
-      <div class="section-title fade-in">
-        <h2>Our Premium Services</h2>
-        <p class="section-subtitle">From concept to completion, we deliver excellence in every project with unmatched attention to detail and innovative solutions.</p>
-      </div>
-      
-      <div class="services-grid">
-        <div class="service-card fade-in" *ngFor="let service of services">
-          <div class="service-icon">
-            <i [class]="service.icon"></i>
-          </div>
-          <h3>{{ service.title }}</h3>
-          <p>{{ service.description }}</p>
-          <ul class="service-features">
-            <li *ngFor="let feature of service.features">{{ feature }}</li>
-          </ul>
+   <section id="services" class="services">
+        <div class="section-title fade-in">
+            <h2>Our Premium Services</h2>
+            <p class="section-subtitle">From concept to completion, we deliver excellence in every project with
+                unmatched attention to detail and innovative solutions.</p>
         </div>
-      </div>
+
+        <div class="services-grid">
+            <div class="service-card fade-in" *ngFor="let service of services">
+                <div class="service-icon">
+                    <i [class]="service.icon"></i>
+                </div>
+                <h3>{{ service.title }}</h3>
+                <p>{{ service.description }}</p>
+                <ul class="service-features">
+                    <li *ngFor="let feature of service.features">{{ feature }}</li>
+                </ul>
+            </div>
+        </div>
     </section>
   
    

@@ -42,6 +42,13 @@ export class ServiceComponent implements OnInit, AfterViewInit {
       description: 'Creative architectural solutions that blend functionality with aesthetic excellence.',
       features: ['3D visualization', 'Sustainable design', 'Space planning', 'Permit assistance']
     }
+    ,
+      {
+    icon: 'fas fa-couch',
+    title: 'Home Décor',
+    description: 'Personalized home styling services to reflect your taste and elevate everyday living spaces.',
+    features: ['Theme-based decor', 'Art and accessory selection', 'Wall treatments', 'Curtains & upholstery']
+  }
   ];
 
   stats = [

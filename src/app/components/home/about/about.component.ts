@@ -46,7 +46,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
 
   stats = [
     { number: '500+', label: 'Projects Completed' },
-    { number: '10+', label: 'Years Experience' },
+      { number: '26', label: 'Years Of Experience' },
     { number: '50+', label: 'Expert Team' },
     { number: '100%', label: 'Client Satisfaction' }
   ];

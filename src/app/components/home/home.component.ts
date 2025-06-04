@@ -42,12 +42,18 @@ import { Title, Meta } from '@angular/platform-browser';
         title: 'Architectural Planning',
         description: 'Creative architectural solutions that blend functionality with aesthetic excellence.',
         features: ['3D visualization', 'Sustainable design', 'Space planning', 'Permit assistance']
-      }
+      },
+      {
+    icon: 'fas fa-couch',
+    title: 'Home Décor',
+    description: 'Personalized home styling services to reflect your taste and elevate everyday living spaces.',
+    features: ['Theme-based decor', 'Art and accessory selection', 'Wall treatments', 'Curtains & upholstery']
+  }
     ];
   
     stats = [
       { number: '500+', label: 'Projects Completed' },
-      { number: '10+', label: 'Years Experience' },
+      { number: '26', label: 'Years Of Experience' },
       { number: '50+', label: 'Expert Team' },
       { number: '100%', label: 'Client Satisfaction' }
     ];
